@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup</title>
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <div class="logo">
+          <img class="lg" width="90px" src="logo.png" alt="" />
+          <span class="text">ODIN</span>
+        </div>
+        <!-- <img width="500px" src="pic.jpg" alt="" /> -->
+      </div>
+      <div class="div2">
+        <div class="container2">
+          <div>
+            <h1>Signup Form</h1>
+            <form id="form">
+              <div class="container3">
+                <div class="inputbox">
+                  <span class="label">FIRST NAME</span>
+                  <input type="text" />
+                </div>
+                <div class="inputbox">
+                  <span class="label">LAST NAME</span>
+                  <input type="label" />
+                </div>
+                <div class="inputbox">
+                  <span class="label">EMAIL</span>
+                  <input type="email" />
+                </div>
+                <div class="inputbox">
+                  <span class="label">PHONE NUMBER</span>
+                  <input type="text" />
+                </div>
+                <div class="inputbox">
+                  <span class="label">PASSWORD</span>
+                  <input type="password" id="password" />
+                  <p id="message"></p>
+                </div>
+                <div class="inputbox">
+                  <span class="label">CONFIRM PASSWORD</span>
+                  <input type="password" id="conpassword" />
+                  <!-- <input
+                    type="button"
+                    value="Create Account"
+                    onclick="validation()"
+                    class="btn"
+                  /> -->
+                  <button class="btn" onclick="validation()">
+                    Create Account
+                  </button>
+                  <div class="abc">Already have an account?<b>Log in</b></div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function validation() {
+      var password = document.getElementById("password").value;
+      var conpassword = document.getElementById("conpassword").value;
+      var message = document.getElementById("message");
+      console.log(password, conpassword);
+      if (password.length == 0) {
+        message.textContent = "*Password Field cant be empty!";
+        message.style.color = "red";
+      } else if (password == conpassword) {
+        message.textContent = "Password Match";
+        message.style.color = "green";
+      } else {
+        message.textContent = "*Password Not Match";
+        message.style.color = "red";
+      }
+    }
+    let form = document.getElementById("form");
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+    });
+  </script>
+</html>

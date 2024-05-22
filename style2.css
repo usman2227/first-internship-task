@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+@font-face {
+  font-family: myfont;
+  src: url(Norse.otf);
+}
+.main {
+  display: flex;
+}
+.container {
+  width: 40%;
+  height: 130vh;
+
+  background-image: url(pic.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.logo {
+  height: 150px;
+  background-color: black;
+  margin-top: 250px;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .lg {
+  margin-left: 100px;
+  margin-top: 10px;
+} */
+.text {
+  font-size: 100px;
+  color: white;
+  font-weight: 900;
+  font-family: myfont;
+}
+.div2 {
+  width: 60%;
+  background-color: rgb(240, 239, 239);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container2 {
+  background-color: white;
+  padding: 35px;
+  width: 100%;
+  box-shadow: 2px 2px 10px 0px gray;
+  margin-top: 150px;
+}
+form .container3 {
+  display: flex;
+  flex-wrap: wrap;
+}
+form .container3 .inputbox {
+  width: calc(100% / 2 - 120px);
+  margin: 10px;
+}
+form .container3 .inputbox input {
+  height: 30px;
+  width: 100%;
+}
+.btn {
+  margin-top: 40px;
+  padding: 15px;
+  width: 230px;
+
+  margin-left: -200px;
+  background-color: rgb(88, 102, 60);
+  color: white;
+  font-size: large;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.abc {
+  margin-left: -200px;
+  margin-top: 15px;
+  font-size: 18px;
+  color: rgb(88, 102, 60);
+}
